@@ -46,21 +46,20 @@ const periodCycle = [
 
 //the draft progression
 
+// 1.
 // let cyclesArr = periodCycle
 // .map(function(month) {
 //   return month.cycleLength;
 // })
-
 // console.log(cyclesArr);
 
-
 // let total = newArray.reduce(function(prev,curr) {
-
 //   return (prev + curr) 
 // })
 
 // total/ 12
-// //
+
+// 2.
 
 // (periodCycle.map((month) => {
 //   return month.cycleLength;
@@ -68,10 +67,12 @@ const periodCycle = [
 //   return prev + curr;
 // })) / 12
 
-//
+// 3.
 
 (periodCycle.map((month) =>  month.cycleLength)
 .reduce((prev, curr) =>  prev + curr )) / 12
+
+
 
 
 

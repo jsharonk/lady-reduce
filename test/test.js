@@ -27,10 +27,35 @@ describe('Array', function() {
         return allNames;
       }, {}).should.equal({'george': 2, 'christine': 1, 'eunice': 1});
    });
-  //  it ('should use reduce to return the sum of monthly cycles', function() {
-
-  //  })
-  // });
+   it ('should use reduce to return the sum of monthly cycles', function() {
+     const periodCycle = [
+          {month: 'janToFeb', 
+            cycleLength: 28}, 
+          {month: 'febToMar',
+            cycleLength : 21},
+          {month: 'marToApr',
+            cycleLength : 30},
+          {month: 'aprToMay', 
+            cycleLength : 22},
+          {month: 'mayToJune', 
+            cycleLength : 21},
+          {month: 'juneToJul', 
+            cycleLength: 29},
+          {month: 'julToAug', 
+            cycleLength: 28},
+          {month: 'augToSept', 
+            cycleLength: 26},
+          {month: 'septToOct', 
+            cycleLength: 28},
+          {month: 'octToNov',
+            cycleLength : 21},
+          {month: 'novToDec', 
+            cycleLength : 29},
+          {month: 'decToJan',
+            cycleLength : 23}
+        ];
+   })
+  });
   // it ('should return the average length of monthly cycles', function() {
 
   });
