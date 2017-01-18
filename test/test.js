@@ -9,24 +9,24 @@ describe('Array', function() {
   });
 });
 
-  describe('#reduce()', function() {
-    it('should apply a function against an accumulator and each value of the array to reduce it to a single value', function() {
-      [0, 1, 2, 3].reduce(function(a, b) { 
-        return a + b;
-      }, 0).should.equal(6);
-    });
-    it('should apply a function against an accumulator and each value of the array to reduce it to a single value', function() {
-      let names = ['george', 'christine', 'eunice', 'george'];
+  // describe('#reduce()', function() {
+  //   it('should apply a function against an accumulator and each value of the array to reduce it to a single value', function() {
+  //     [0, 1, 2, 3].reduce(function(a, b) { 
+  //       return a + b;
+  //     }, 0).should.equal(6);
+  //   });
+  //   it('should apply a function against an accumulator and each value of the array to reduce it to a single value', function() {
+  //     let names = ['george', 'christine', 'eunice', 'george'];
 
-      let countedNames = names.reduce(function(allNames, name) {
-        if (name in allNames) {
-          allNames[name] += 1;
-        } else {
-          allNames[name] = 1;
-        }
-        return allNames;
-      }, {}).should.equal({'george': 2, 'christine': 1, 'eunice': 1});
-   });
+  //     let countedNames = names.reduce(function(allNames, name) {
+  //       if (name in allNames) {
+  //         allNames[name] += 1;
+  //       } else {
+  //         allNames[name] = 1;
+  //       }
+  //       return allNames;
+  //     }, {}).should.equal({'george': 2, 'christine': 1, 'eunice': 1});
+  //  });
    it ('should use reduce to return the sum of monthly cycles', function() {
      const periodCycle = [
           {month: 'janToFeb', 
@@ -54,8 +54,8 @@ describe('Array', function() {
           {month: 'decToJan',
             cycleLength : 23}
         ];
-   })
-  });
+   });
+  // });
   // it ('should return the average length of monthly cycles', function() {
 
-  });
+  // });
